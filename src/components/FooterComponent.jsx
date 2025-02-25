@@ -1,9 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const FooterComponent = () => {
   return (
-    <div>
+    <div className="footer py-5">
       <Container>
         <Row>
           <Col>
@@ -13,16 +13,16 @@ const FooterComponent = () => {
               cumque blanditiis nobis, iste neque saepe deserunt quia atque
               dolore consequuntur!
             </p>
-            <diV className="no">
-              <link>
+            <diV className="no mb-1 mt-4">
+              <Link className="text-decoration-none">
               <i className="fa-brands fa-whatsapp"></i>
-              <p>+62 123-456-789</p>
-              </link>
+              <p className="m-0">+62 123-456-789</p>
+              </Link>
             </diV>
             <div className="mail">
-              <Link>
+              <Link className="text-decoration-none">
               <i className="fa-regular fa-envelope"></i>
-              <p>person-email@gmail.com</p>
+              <p className="m-0">person-email@gmail.com</p>
               </Link>
             </div>
           </Col>
